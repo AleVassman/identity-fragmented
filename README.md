@@ -2,7 +2,7 @@
 
 An autobiographical, interactive 3D WebGL experience exploring memory loss, chronic illness, and the void. Built with **Three.js**, custom **GLSL shaders**, and dynamic soundscapes via the **Web Audio API**.
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://YOUR-LIVE-URL.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://identity-fragmented.vercel.app)
 [![Three.js](https://img.shields.io/badge/Three.js-r160+-black?style=for-the-badge&logo=three.js)](https://threejs.org/)
 [![Vite](https://img.shields.io/badge/Vite-Bundler-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 
