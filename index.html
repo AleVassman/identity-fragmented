@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="doc-title">Identità // Frammentata</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- SELETTORE LINGUA FISSO -->
+    <nav class="lang-switch" aria-label="Language selection">
+        <button id="btn-lang-it" class="lang-btn active">IT</button>
+        <span class="lang-sep">/</span>
+        <button id="btn-lang-en" class="lang-btn">EN</button>
+    </nav>
+
+    <!-- 1. INTRO OVERLAY (Aggiunti gli ID mancanti) -->
+    <div id="intro-overlay" class="overlay">
+        <div class="overlay-content">
+            <span id="intro-tag" class="overlay-tag">LA MIA VITA</span>
+            <h1 id="intro-title" class="intro-title">IDENTITÀ<span class="title-slash">//</span>FRAMMENTATA</h1>
+            <p id="intro-desc" class="intro-desc">Una testimonianza di ciò che è stato, ciò che è e ciò che sarà.</p>
+            <button id="btn-enter" class="btn-cinematic">Inizia il viaggio</button>
+        </div>
+    </div>
+
+    <!-- 2. OUTRO OVERLAY (Aggiunti gli ID mancanti) -->
+    <div id="outro-overlay" class="overlay outro-hidden">
+        <div class="overlay-content">
+            <span id="outro-tag" class="overlay-tag">LA FINE</span>
+            <h2 id="outro-title" class="outro-title">RESTA SOLO IL SILENZIO</h2>
+            <p id="outro-desc" class="outro-desc">Il corpo ha smesso di lottare, la mente ha lasciato andare la presa. Tutto ciò che è stato vissuto, sofferto e dimenticato si è sciolto nel buio, dove non esiste più dolore né tempo.</p>
+            <button id="btn-rewind" class="btn-cinematic btn-rewind">RIAVVOLGI IL TEMPO</button>
+        </div>
+    </div>
+
+    <!-- 3. HUD -->
+    <main id="app" class="hud-hidden">
+        <header class="hud-header">
+            <span id="hud-tag" class="hud-tag">LA MIA VITA</span>
+            <span class="hud-status" id="timeline-status">ATTO I // MEMORIE SBIADITE</span>
+        </header>
+
+        <div class="narrative-container" id="narrative-container"></div>
+
+        <footer class="hud-footer">
+            <div id="interaction-hint" class="interaction-hint">
+                <span class="key-badge">CUFFIE CONSIGLIATE</span> &bull; <span class="key-badge">SCORRI</span> O <span class="key-badge">TIENI PREMUTO</span> per fluttuare
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="progress-bar"></div>
+            </div>
+        </footer>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
